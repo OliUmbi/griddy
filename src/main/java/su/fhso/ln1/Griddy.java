@@ -7,12 +7,15 @@ public class Griddy {
 
     public static void main(String[] args) {
 
-        Graph graph = new Graph();
+        final int WIDTH = 30;
+        final int HEIGHT = 20;
+
+        Graph graph = new Graph(WIDTH, HEIGHT);
         graph.addNode();
         graph.addNode();
         graph.addNode();
 
-        View view = new View(graph);
+        View view = new View(WIDTH, HEIGHT, graph);
         view.start();
 
     }
