@@ -25,7 +25,7 @@ public class SwitchView implements Drawable, Clickable, Hoverable {
     public void draw(Gui gui) {
         gui.setColor(hovered ? Color.parseHexCode("#f1f1f1") : Color.parseHexCode("#ffffff"));
         gui.fillRect(View.getScreenX(x), View.getScreenY(y), View.getNodeWidth(), View.getNodeWidth());
-        gui.drawImage(getAsset(), x, y, 1, Math.PI / 2 * node.getOrientation());
+        gui.drawImage(getAsset(), View.getScreenX(x), View.getScreenY(y), 1, Math.PI / 2 * node.getOrientation());
     }
 
     private String getAsset() {

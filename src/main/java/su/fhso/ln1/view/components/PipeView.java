@@ -3,6 +3,7 @@ package su.fhso.ln1.view.components;
 import ch.trick17.gui.Gui;
 import ch.trick17.gui.component.Drawable;
 import su.fhso.ln1.model.nodes.PipeNode;
+import su.fhso.ln1.view.View;
 
 public class PipeView implements Drawable {
 
@@ -18,7 +19,7 @@ public class PipeView implements Drawable {
 
     @Override
     public void draw(Gui gui) {
-        gui.drawImage(getAsset(), x, y, 1, Math.PI / 2 * node.getOrientation());
+        gui.drawImage(getAsset(), View.getScreenX(x), View.getScreenY(y), 1, Math.PI / 2 * node.getOrientation());
     }
 
     private String getAsset() {
