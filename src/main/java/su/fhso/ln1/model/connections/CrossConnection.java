@@ -4,6 +4,6 @@ public class CrossConnection implements Connection {
 
     @Override
     public boolean connects(Orientation orientation) {
-        return false;
+        return true;
     }
 }
