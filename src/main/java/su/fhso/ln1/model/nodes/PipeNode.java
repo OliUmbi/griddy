@@ -1,6 +1,10 @@
 package su.fhso.ln1.model.nodes;
 
-public interface PipeNode extends Node {
+import su.fhso.ln1.model.connections.Connection;
 
-    String getType();
+public class PipeNode extends NodeWithConnectionType implements IPipeNode {
+
+    public PipeNode(Connection connection) {
+        super(connection);
+    }
 }

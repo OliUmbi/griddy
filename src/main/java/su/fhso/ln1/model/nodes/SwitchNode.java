@@ -1,6 +1,9 @@
 package su.fhso.ln1.model.nodes;
 
-public interface SwitchNode extends Node {
+import su.fhso.ln1.model.connections.Connection;
+public class SwitchNode extends NodeWithConnectionType implements ISwitchNode {
 
-    String getType();
+    public SwitchNode(Connection connection) {
+        super(connection);
+    }
 }

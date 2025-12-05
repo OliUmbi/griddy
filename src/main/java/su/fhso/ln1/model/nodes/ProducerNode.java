@@ -1,5 +1,9 @@
 package su.fhso.ln1.model.nodes;
 
-public interface ProducerNode extends Node {
+import su.fhso.ln1.model.connections.CrossConnection;
 
+public class ProducerNode extends Node implements IProducerNode {
+    public ProducerNode() {
+        super(new CrossConnection());
+    }
 }

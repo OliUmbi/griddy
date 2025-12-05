@@ -1,5 +1,9 @@
 package su.fhso.ln1.model.nodes;
 
-public interface ConsumerNode extends Node {
+import su.fhso.ln1.model.connections.CrossConnection;
 
+public class ConsumerNode extends Node implements IConsumerNode {
+    public ConsumerNode() {
+        super(new CrossConnection());
+    }
 }

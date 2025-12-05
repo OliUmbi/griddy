@@ -35,7 +35,7 @@ public class View {
     }
 
     private void createComponents(Window window) {
-        Node[][] node = graph.getNodes();
+        INode[][] node = graph.getNodes();
 
         for (int x = 0; x < node.length; x++) {
             for (int y = 0; y < node[x].length; y++) {
