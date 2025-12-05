@@ -5,18 +5,17 @@ import su.fhso.ln1.view.View;
 
 public class Griddy {
 
+    public static final int WIDTH = 30;
+    public static final int HEIGHT = 20;
+
     public static void main(String[] args) {
 
-        final int WIDTH = 30;
-        final int HEIGHT = 20;
-
-        Graph graph = new Graph(WIDTH, HEIGHT);
+        Graph graph = new Graph();
         graph.addNode();
         graph.addNode();
         graph.addNode();
 
-        View view = new View(WIDTH, HEIGHT, graph);
+        View view = new View(graph);
         view.start();
-
     }
 }
