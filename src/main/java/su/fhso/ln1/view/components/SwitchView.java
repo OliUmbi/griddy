@@ -32,9 +32,9 @@ public class SwitchView implements Drawable, Clickable, Hoverable {
         return switch (node.getType()) {
             case "X" -> "switch-cross.png";
             case "L" -> "switch-corner.png";
-            case "T" -> "switch-cross.png"; // todo update
+            case "T" -> "switch-crossing.png"; // todo update
             case "I" -> "switch-straight.png";
-            default -> "";
+            default -> "switch-crossing.png";
         };
     }
 

@@ -25,9 +25,9 @@ public class PipeView implements Drawable {
         return switch (node.getType()) {
             case "X" -> "pipe-cross.png";
             case "L" -> "pipe-corner.png";
-            case "T" -> "pipe-cross.png"; // todo update
+            case "T" -> "pipe-crossing.png"; // todo update
             case "I" -> "pipe-straight.png";
-            default -> "";
+            default -> "pipe-crossing.png";
         };
     }
 }
