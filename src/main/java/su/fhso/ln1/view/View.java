@@ -12,7 +12,7 @@ import su.fhso.ln1.view.components.SwitchView;
 public class View {
 
     public final static int FPS = 60;
-    private static final int NODE_WIDTH = 40;
+    private static final int NODE_WIDTH = 50;
 
     private final Graph graph;
 

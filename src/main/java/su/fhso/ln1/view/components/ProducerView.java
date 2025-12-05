@@ -20,6 +20,6 @@ public class ProducerView implements Drawable {
 
     @Override
     public void draw(Gui gui) {
-        gui.drawImage("./producer-renewable.png", View.getScreenX(x), View.getScreenY(y));
+        gui.drawImage("./producer.png", View.getScreenX(x), View.getScreenY(y));
     }
 }

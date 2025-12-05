@@ -30,11 +30,11 @@ public class SwitchView implements Drawable, Clickable, Hoverable {
 
     private String getAsset() {
         return switch (node.getType()) {
-            case "X" -> "switch-crossing.png";
-            case "L" -> "switch-corner.png";
-            case "T" -> "switch-crossing.png"; // todo update
-            case "I" -> "switch-straight.png";
-            default -> "switch-crossing.png";
+            case "X" -> node.isPowered() ? "./switch-x-active.png" : "./switch-x-inactive.png";
+            case "L" -> node.isPowered() ? "./switch-l-active.png" : "./switch-l-inactive.png";
+            case "T" -> node.isPowered() ? "./switch-t-active.png" : "./switch-t-inactive.png";
+            case "I" -> node.isPowered() ? "./switch-i-active.png" : "./switch-i-inactive.png";
+            default -> "./switch-x-inactive.png";
         };
     }
 

@@ -24,11 +24,11 @@ public class PipeView implements Drawable {
 
     private String getAsset() {
         return switch (node.getType()) {
-            case "X" -> "pipe-crossing.png";
-            case "L" -> "pipe-corner.png";
-            case "T" -> "pipe-crossing.png"; // todo update
-            case "I" -> "pipe-straight.png";
-            default -> "pipe-crossing.png";
+            case "X" -> node.isPowered() ? "./pipe-x-active.png" : "./pipe-x-inactive.png";
+            case "L" -> node.isPowered() ? "./pipe-l-active.png" : "./pipe-l-inactive.png";
+            case "T" -> node.isPowered() ? "./pipe-t-active.png" : "./pipe-t-inactive.png";
+            case "I" -> node.isPowered() ? "./pipe-i-active.png" : "./pipe-i-inactive.png";
+            default -> "./pipe-x-inactive.png";
         };
     }
 }

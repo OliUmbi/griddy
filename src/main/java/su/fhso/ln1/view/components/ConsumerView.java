@@ -20,6 +20,6 @@ public class ConsumerView implements Drawable {
 
     @Override
     public void draw(Gui gui) {
-        gui.drawImage(node.isPowered() ? "./consumer-powered.png" : "./consumer-unpowered.png", View.getScreenX(x), View.getScreenY(y));
+        gui.drawImage(node.isPowered() ? "./consumer-active.png" : "./consumer-inactive.png", View.getScreenX(x), View.getScreenY(y));
     }
 }
