@@ -24,7 +24,7 @@ public class PipeView implements Drawable {
 
     private String getAsset() {
         return switch (node.getType()) {
-            case "X" -> "pipe-cross.png";
+            case "X" -> "pipe-crossing.png";
             case "L" -> "pipe-corner.png";
             case "T" -> "pipe-crossing.png"; // todo update
             case "I" -> "pipe-straight.png";
