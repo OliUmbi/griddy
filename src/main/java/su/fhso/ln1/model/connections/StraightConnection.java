@@ -8,5 +8,5 @@ public class StraightConnection extends Connection {
             case NORTH, SOUTH -> getRotation() % 2 == 1;
             case EAST, WEST -> getRotation() % 2 == 0;
         };
-    };
+    }
 }
