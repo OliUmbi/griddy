@@ -50,6 +50,10 @@ public class Graph {
 
     private void propagatePower(int x, int y) {
         Node node = nodes[x][y];
+        if (node == null) {
+            return;
+        }
+
         if (node.isPowered()) {
             return;
         }

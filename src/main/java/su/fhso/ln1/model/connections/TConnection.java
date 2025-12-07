@@ -1,6 +1,14 @@
 package su.fhso.ln1.model.connections;
 
 public class TConnection extends Connection {
+
+    public TConnection() {
+    }
+
+    public TConnection(int rotation) {
+        super(rotation);
+    }
+
     @Override
     public boolean connects(Orientation orientation) {
         return switch(orientation){

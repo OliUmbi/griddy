@@ -4,6 +4,13 @@ public abstract class Connection {
 
     private int rotation;
 
+    public Connection() {
+    }
+
+    public Connection(int rotation) {
+        this.rotation = rotation;
+    }
+
     public int getRotation() {
         return rotation;
     }

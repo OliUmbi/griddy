@@ -21,9 +21,7 @@ public class View {
     }
 
     public void start() {
-
-
-        Window window = new Window("Geothermal", getScreenWidth(), getScreenHeight());
+        Window window = new Window("Griddy", getScreenWidth(), getScreenHeight());
         window.setFullScreen(false);
         window.setResizable(false);
         window.open();
